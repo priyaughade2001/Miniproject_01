@@ -16,3 +16,8 @@ This is a basic calendar program created using simple c program, using this prog
 # SWOT ANALYSIS
 
 ![Screenshot (216)](https://user-images.githubusercontent.com/90169620/161007674-90fe69ce-b276-4974-a127-b6ca8370b879.png)
+
+# 4W's and 1'H
+
+# Who:
+
