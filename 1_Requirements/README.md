@@ -12,3 +12,7 @@ This is a basic calendar program created using simple c program, using this prog
 # Defining Our System
 
 ![UML-class-diagram-of-the-calendar-case-study](https://user-images.githubusercontent.com/90169620/160993046-b148fccc-feb6-4a80-96eb-baaf000599d3.png)
+
+# SWOT ANALYSIS
+
+![Screenshot (216)](https://user-images.githubusercontent.com/90169620/161007674-90fe69ce-b276-4974-a127-b6ca8370b879.png)
