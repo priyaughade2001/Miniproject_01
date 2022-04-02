@@ -8,22 +8,17 @@ on:
 
 jobs:
   build:
-    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node_version: ['8', '10', '12']
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-
+  
+    runs-on: windows-latest
+   
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node_version }}
-    
-    - name: npm install, build and test  
+    - uses: actions/checkout@v2
+    - name: apt install dependency
       run: |
-        npm install
-        npm run build --if-present
-        npm test
+        sudo apt-get -y install valgrind
+        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+    
+    - name: make test  
+      run: |
+        make test -C MiniProject_C/3_Implementation/
+        valgrind ./MiniProject_C/3_Implementation/build/Test_Calculator.out
