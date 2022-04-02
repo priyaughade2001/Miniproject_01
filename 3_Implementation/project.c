@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#include<windows.h>
+
 
 int getkey();
 void display(int,int,int,int[]);
