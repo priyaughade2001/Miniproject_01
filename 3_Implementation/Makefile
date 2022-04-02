@@ -5,8 +5,8 @@ PROJECT_NAME = Calender
 DOC = doc
 
 # All source code files
-SRC = project_main.c\
-src/project.c
+SRC = project.c\
+#src/project.c
 
 # All test source files
 TEST_SRC = src/project.c\
