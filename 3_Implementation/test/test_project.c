@@ -1,9 +1,56 @@
-
 #include "unity.h"
+#include <calculator_operations.h>
 
-int currentPoints = 0;
-int maxPoints = 100;
+/* Modify these two lines according to the project */
+#include <calculator_operations.h>
+#define PROJECT_NAME    "Calculator"
 
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
+
+
+/* Start of the application test */
+int main()
+{
+/* Initiate the Unity Test Framework */
+  UNITY_BEGIN();
+
+/* Run Test functions */
+/* Close the Unity Test Framework */
+  return UNITY_END();
+}
+
+/* Write all the test functions */ 
+void gotoxy(void) {
+  TEST_ASSERT_EQUAL(coord.X=x;
+    coord.Y=y;);
+  
+  /* Dummy fail*/
+  TEST_ASSERT_EQUAL("GOTOXY function fail");
+}
+
+void SetColor(void) {
+  TEST_ASSERT_EQUAL(wColor);
+  
+  /* Dummy fail*/
+  TEST_ASSERT_EQUAL("wColor is failed");
+}
+
+void test_multiply(void) {
+  TEST_ASSERT_EQUAL(0, multiply(1, 0));
+  
+  /* Dummy fail*/
+  TEST_ASSERT_EQUAL(10, multiply(2, 5));
+}
+
+void test_divide(void) {
+  TEST_ASSERT_EQUAL(0, divide(1, 0));
+  
+  /* Dummy fail*/
+  TEST_ASSERT_EQUAL(1, divide(2, 2));
+}
 //UUTime tests
 
 TEST(UUTime, TestTimeConstructor1)
