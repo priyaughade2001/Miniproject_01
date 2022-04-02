@@ -21,11 +21,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node_version }}
+    
     - name: npm install, build and test  
       run: |
         npm install
         npm run build --if-present
         npm test
-      run: |
-        make test -C Miniproject_01/3_Implementation/
-        valgrind ./Miniproject_01/3_Implementation/build/Test_Calender.out
